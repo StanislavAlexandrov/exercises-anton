@@ -42,7 +42,7 @@ const clicker = (answer) => {
     if (answer.target.innerHTML === dataArray[currentStep].answer) {
         mdc.style.backgroundColor = '#80d983';
 
-        setTimeout(() => (mdc.style.backgroundColor = '#eee'), 100);
+        setTimeout(() => (mdc.style.backgroundColor = '#eee'), 250);
 
         ++currentStep;
 
@@ -64,7 +64,7 @@ const clicker = (answer) => {
         errorElement.innerText = `Errors: ${errorNumber}`;
         mdc.style.backgroundColor = '#c70f0f';
 
-        setTimeout(() => (mdc.style.backgroundColor = '#eee'), 100);
+        setTimeout(() => (mdc.style.backgroundColor = '#eee'), 250);
     }
 };
 
