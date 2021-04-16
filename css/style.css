@@ -1,0 +1,15 @@
+html,
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eee;
+    text-align: center;
+}
+button {
+    margin: 5px;
+}
+
+.errors {
+    color: #c70f0f;
+}

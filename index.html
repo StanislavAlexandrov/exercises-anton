@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Anton</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell"></div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="mdc-card">
+                        <h2
+                            class="currentStep mdc-layout-grid mdc-toolbar-fixed-adjust"
+                        >
+                            Current step:
+                        </h2>
+                        <h2
+                            class="errors mdc-layout-grid mdc-toolbar-fixed-adjust"
+                        >
+                            Errors:
+                        </h2>
+                        <div class="mdc-list-divider"></div>
+                        <h1
+                            class="question mdc-layout-grid mdc-toolbar-fixed-adjust"
+                        >
+                            Question:
+                        </h1>
+                        <h1
+                            class="answers mdc-layout-grid mdc-toolbar-fixed-adjust"
+                        ></h1>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell"></div>
+            </div>
+        </div>
+    </body>
+    <script src="data/dataArray.js"></script>
+    <script src="js/index.js"></script>
+</html>
