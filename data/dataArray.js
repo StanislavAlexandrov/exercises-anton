@@ -68,7 +68,6 @@ const dataArray = [
         allAnswers: [
             'The battery died. ',
             'The battery was died. ',
-            'the / the / a',
             'The accumulator was dead. ',
             'The accumulator was died. ',
         ],
@@ -149,5 +148,54 @@ const dataArray = [
             'Just a moment, I check.',
             "Just moment, I'll check.",
         ],
+    },
+    {
+        id: 16,
+        sentence: 'Мне нравится окружение.',
+        answer: 'I like the surroundings.',
+        allAnswers: [
+            'I like the surrounds.',
+            'I like the surroundings.',
+            'I like a surroundings.',
+        ],
+    },
+    {
+        id: 17,
+        sentence: 'До встречи на занятиях.',
+        answer: 'See you in class.',
+        allAnswers: [
+            'See you on the class.',
+            'See you on class.',
+            'See you in class.',
+            'See you in classes.',
+        ],
+    },
+    {
+        id: 18,
+        sentence: 'Это незаконно.',
+        answer: 'It is illegal.',
+        allAnswers: [
+            'It is unlegal.',
+            'It is unlegally.',
+            'It is illegal.',
+            'It is illegally.',
+        ],
+    },
+    {
+        id: 19,
+        sentence: 'В пятницу вечером.',
+        answer: 'On Friday night.',
+        allAnswers: [
+            'On Friday night.',
+            'At Friday night.',
+            'Friday at night.',
+            'On Friday in the night.',
+        ],
+    },
+    {
+        id: 20,
+        sentence: 'Резина',
+        answer: 'Rubber',
+        allAnswers: ['Ribbon', 'Rubber', 'Robber', 'Rubbing'],
     },
 ];

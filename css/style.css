@@ -13,3 +13,7 @@ button {
 .errors {
     color: #c70f0f;
 }
+
+.answerButton {
+    font-size: 20px;
+}
