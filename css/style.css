@@ -17,3 +17,24 @@ button {
 .answerButton {
     font-size: 20px;
 }
+
+.victoryPicture {
+    margin-top: 20px;
+    height: 10vh;
+    margin: auto;
+    display: none;
+    border-radius: 60px;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

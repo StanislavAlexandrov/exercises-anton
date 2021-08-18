@@ -9,6 +9,8 @@ let questionElement = document.querySelector('.question');
 
 let parentElement = document.querySelector('.answers');
 
+let victoryPicture = document.querySelector('.victoryPicture');
+
 errorElement.innerText = `Errors: ${errorNumber}`;
 currentStepElement.innerText = `Current step: ${currentStep + 1} of ${
     dataArray.length
@@ -51,6 +53,8 @@ const clicker = (answer) => {
         allAnswerButtons.forEach((element) => element.remove());
         if (currentStep > dataArray.length - 1) {
             currentStep = 0;
+            victoryPicture.style.display = 'block';
+            setTimeout(() => (victoryPicture.style.display = 'none'), 4900);
         }
 
         shuffleArray(dataArray[currentStep].allAnswers);
