@@ -67,7 +67,7 @@ const clicker = (answer) => {
         setTimeout(() => (mdc.style.backgroundColor = '#eee'), 250);
     }
 };
-
+shuffleArray(dataArray);
 shuffleArray(dataArray[currentStep].allAnswers);
 createQuestions();
 createAnswers();
