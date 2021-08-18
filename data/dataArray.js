@@ -198,4 +198,59 @@ const dataArray = [
         answer: 'Rubber',
         allAnswers: ['Ribbon', 'Rubber', 'Robber', 'Rubbing'],
     },
+    {
+        id: 21,
+        sentence: 'Рамка сделана из дерева.',
+        answer: 'This frame is made of wood.',
+        allAnswers: [
+            'This frame is made by wood.',
+            'This frame is made of wood.',
+            'This frame made from wood.',
+            'This frame made by wood.',
+        ],
+    },
+    {
+        id: 22,
+        sentence: 'Команда из пяти человек',
+        answer: 'A team of five people',
+        allAnswers: [
+            'A team from five people',
+            'A team of five peoples',
+            'A team of five people',
+            'A team of five persons',
+        ],
+    },
+    {
+        id: 23,
+        sentence: 'Молоко закончилось.',
+        answer: 'We are out of milk.',
+        allAnswers: [
+            'We out of milk.',
+            'We have empty of milk.',
+            'We have not of milk.',
+            'We are out of milk.',
+        ],
+    },
+    {
+        id: 24,
+        sentence: 'Предлагаю сделать собрание на завтра.',
+        answer: "Let's schedule a meeting for tomorrow.",
+        allAnswers: [
+            'I suggest to make a meeting for tomorrow.',
+            'I propose to create a meeting for tomorrow.',
+            "Let's schedule a meeting for tomorrow.",
+            'I suggest schedule a meeting for tomorrow.',
+        ],
+    },
+    {
+        id: 25,
+        sentence: 'Она может плохо себя почувствовать.',
+        answer: 'She might not feel well.',
+        allAnswers: [
+            'She could feel herself bad.',
+            'She could not feel badly.',
+            'She might not feel herself badly.',
+            'She might not feel well.',
+        ],
+    },
 ];
