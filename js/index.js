@@ -50,11 +50,39 @@ const clicker = (answer) => {
 
         const allAnswerButtons = document.querySelectorAll('.answerButton');
 
-        allAnswerButtons.forEach((element) => element.remove());
-        if (currentStep > dataArray.length - 1) {
+        const restartQuiz = () => {
             currentStep = 0;
+            errorNumber = 0;
+            errorElement.innerText = `Errors: ${errorNumber}`;
+            parentElement.innerHTML = ''; // Remove the restart button
+            shuffleArray(dataArray);
+            shuffleArray(dataArray[currentStep].allAnswers);
+            createQuestions();
+            createAnswers();
+        };
+
+        allAnswerButtons.forEach((element) => element.remove());
+        if (currentStep >= dataArray.length) {
+            questionElement.innerText = `🎉 Quiz Completed!`;
+
+            // Create a new div for score display
+            let scoreDisplay = document.createElement('h2');
+            scoreDisplay.innerText = `❌ Mistakes made: ${errorNumber}`;
+            scoreDisplay.className = 'scoreDisplay';
+            parentElement.innerHTML = ''; // Remove previous buttons
+            parentElement.appendChild(scoreDisplay);
+
+            // Create Restart Button
+            const restartButton = document.createElement('button');
+            restartButton.innerText = 'Try Again';
+            restartButton.className = 'mdc-button';
+            restartButton.onclick = restartQuiz;
+            parentElement.appendChild(restartButton);
+
             victoryPicture.style.display = 'block';
             setTimeout(() => (victoryPicture.style.display = 'none'), 4900);
+
+            return; // Prevents any further execution
         }
 
         shuffleArray(dataArray[currentStep].allAnswers);
