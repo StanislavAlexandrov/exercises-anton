@@ -103,3 +103,45 @@ shuffleArray(dataArray);
 shuffleArray(dataArray[currentStep].allAnswers);
 createQuestions();
 createAnswers();
+
+const sentences = [
+    'I still do not understand, why did he decide to resign so suddenly.',
+    'We are all wondering if the new software updates soon.',
+    'Last week, our manager asked us when we are going to finish the quarterly budget.',
+    'She wanted to know that where we had bought those beautiful paintings.',
+    'The CEO requested that the employees cleaned the office before the VIP guests arrived.',
+    'Could you please explain me how this new CRM system works?',
+    'I am not sure if or not we should accept their business proposal.',
+    'Nobody in the office knows who did write that anonymous complaint letter.',
+    'The client asked would we be able to deliver the shipment by Friday.',
+    'He told me he already visited Moscow twice before he moved to Texas.',
+];
+
+let currentSentence = 0;
+const sentenceStepElement = document.querySelector('.sentenceCurrentStep');
+const sentenceElement = document.querySelector('.sentence');
+const previousSentenceButton = document.querySelector('.sentencePrevious');
+const nextSentenceButton = document.querySelector('.sentenceNext');
+
+const showSentence = () => {
+    sentenceStepElement.innerText = `Current step: ${currentSentence + 1} of ${sentences.length}`;
+    sentenceElement.innerText = sentences[currentSentence];
+    previousSentenceButton.disabled = currentSentence === 0;
+    nextSentenceButton.disabled = currentSentence === sentences.length - 1;
+};
+
+previousSentenceButton.onclick = () => {
+    if (currentSentence > 0) {
+        --currentSentence;
+        showSentence();
+    }
+};
+
+nextSentenceButton.onclick = () => {
+    if (currentSentence < sentences.length - 1) {
+        ++currentSentence;
+        showSentence();
+    }
+};
+
+showSentence();
